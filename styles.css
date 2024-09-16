@@ -1,0 +1,102 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid gray;
+    border-radius: 50px;
+}
+.estimate-spend{
+    padding: 40px;
+    width: 50%;
+    border-right: 1px solid gray;
+}
+.estimate-heading{
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(43, 42, 42);
+    font-weight: 500;
+}
+.spend-input{
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #333;
+    padding: 4px 10px;
+    width: 80%;
+}
+.annual-heading {
+    padding-top: 20px ;
+}
+.annual-heading p {
+    font-size: 14px;
+    padding: 0px 10px;
+    color: #333;
+}
+.annual-btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    width:87%;
+    border-radius: 20px;
+    padding: 0px 0px;
+}
+.btn{
+    padding: 5px 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    /* background-color:red; */
+}
+.below-btn {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.above-btn {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.below-btn.active {
+    background-color: lightcoral;
+    color: white;
+}
+.above-btn.active {
+    background-color: lightcoral;
+    color: white;
+}
+.estimate-total{
+    padding: 40px;
+    width: 50%;
+    text-align: center;
+}
+.total-heading h2 {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(43, 42, 42);
+    font-weight: 500;
+}
+.tax-offset .offset-result{
+    font-size: 26px;
+    font-weight: 400;
+}
+.funding-btn{
+    background-color: lightcoral;
+    padding: 15px 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: white;
+}
