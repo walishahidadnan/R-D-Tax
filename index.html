@@ -37,7 +37,89 @@
             </div>
         </div>
     </div>
-
+   
+   <!-- <button id="wellcomBtn">
+    popup
+   </button>
+   
+    <div id="popup" class="popup-modal" style="display: none;">
+        <div id="step1">
+          <form id="emailForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="button" id="continueBtn">Continue</button>
+          </form>
+        </div>
+      
+        <div id="step2" style="display: none;">
+          <form id="detailsForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" required>
+      
+            <button type="submit" id="submitBtn">Submit</button>
+          </form>
+        </div>
+    </div> -->
+      
     <script src="main.js"></script>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get elements
+            const wellcomBtn = document.getElementById("wellcomBtn");
+            const popup = document.getElementById("popup");
+            const step1 = document.getElementById("step1");
+            const step2 = document.getElementById("step2");
+            const continueBtn = document.getElementById("continueBtn");
+            const submitBtn = document.getElementById("submitBtn");
+
+            // Show popup when clicking the "wellcomeBtn"
+            wellcomBtn.addEventListener("click", function () {
+                popup.style.display = "block";
+                console.log('clicked')
+            });
+
+            // Handle the "Continue" button click
+            continueBtn.addEventListener("click", function () {
+                const email = document.getElementById("email").value;
+                
+                // Simple email validation
+                if (validateEmail(email)) {
+                // Hide step 1 and show step 2
+                step1.style.display = "none";
+                step2.style.display = "block";
+                } else {
+                alert("Please enter a valid email address.");
+                }
+            });
+
+            // Handle the final form submission
+            submitBtn.addEventListener("click", function (event) {
+                event.preventDefault();
+                
+                // const email = document.getElementById("email").value;
+                // const name = document.getElementById("name").value;
+                // const contact = document.getElementById("contact").value;
+                
+                // Redirect to rd-estimate page with email, name, and contact in URL
+                // window.location.href = `/rd-estimate?email=${encodeURIComponent(email)}&name=${encodeURIComponent(name)}&contact=${encodeURIComponent(contact)}`;
+                document.getElementById("contact").value = '';
+                document.getElementById("name").value = '';
+                document.getElementById("email").value = ''
+                step1.style.display = "block";
+                step2.style.display = "none";
+            });
+
+            // Email validation function
+            function validateEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(String(email).toLowerCase());
+            }
+        });
+
+    </script> -->
 </body>
 </html>
